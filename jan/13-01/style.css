@@ -1,20 +1,50 @@
-li {
-  background-color: blue;
+body{
+  background-color: rgb(0, 0, 0);
 }
 
-div p {
-  background-color: red;
+body p {
+text-align: center;
+color: aquamarine;
 }
-ul li {
-  background-color: yellow;
+
+div {
+background-color: aquamarine;
 }
-/* Menu */
-nav ul li {
-  background-color: gray;
+
+div p{
+color: black;
+font-size: 108px;
 }
-.dark {
+
+nav {
+ 
+  background-color: aquamarine;
+  position:static;
+}
+
+nav ul li{
+display: inline-flex;
+margin: 4em;
+padding: 2em;
+}
+nav ul li a{
+  text-decoration: none;
+  color: black;
+}
+
+nav ul li a:hover{
   background-color: black;
+  color: aquamarine;
+  text-decoration: none;
+  transition: 1.5s;
+  }
+
+.container {
+  background-color: rgb(0, 0, 0);
+  display: flex;
+  align-items: center;
 }
-.light {
-  color: orange;
-}
+
+div ol {
+background-color: aquamarine;
+  }
