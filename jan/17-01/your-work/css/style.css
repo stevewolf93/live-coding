@@ -96,26 +96,34 @@ main img
   height: 9rem;
   background-color: rgb(72, 72, 248);
   border: solid 4px black;
-  display: inline-flex;
-  margin: 3rem;
-}
+ 
+ }
 
 #tri{
   width:  0rem;
   height: 0rem;
   border-bottom: 5rem solid rgb(111, 0, 238);
   border-right: 7rem solid transparent;
-  display: inline-flex;
+  position: relative;
+  top: 10px;
+  left: 4px;
+
+}
+
+  #tri-out {
+  width:  0rem;
+  height: 0rem;
+  border-bottom: 6rem solid rgb(0, 0, 0);
+  border-right: 8rem solid transparent;
   margin: 3rem;
   
-}
+  }
 
 #sq{
   width: 5rem;
   height: 5rem;
   background-color: rgb(0, 165, 36);
   border: solid 4px black;
-  display: inline-flex;
   margin: 3rem;
 }
 #cir{
@@ -124,7 +132,6 @@ main img
   border-radius: 50%;
   background-color: rgb(255, 129, 45);
   border: solid 4px black;
-  display: inline-flex;
   margin: 3rem;
 
 }
