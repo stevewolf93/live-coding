@@ -73,8 +73,11 @@ border: 5px solid black;
 
 #img1
 {
-  margin: 1rem auto;
+  position: absolute;
+  top:30rem;
+  left: 30rem;
   width: 50%;
+
   border: white solid 5px;
   padding: 10px 15px 150px 5px;
   background-color: aliceblue;
@@ -84,4 +87,11 @@ border: 5px solid black;
   transform: scale(1.5) rotate(45deg);
   transition: 150ms;
  
+}
+
+table, th, td, tr{
+  border: #694200 2px solid;
+  border-spacing: 4px;
+  
+  
 }
