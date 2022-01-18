@@ -1,6 +1,6 @@
-table, td{
-  border: 2px solid rgb(0, 0, 0);
-  border-spacing: 0px;}
+table{
+   border-spacing: 0px;
+   border: solid black 2px;}
 td{
   height: 64px;
   width: 64px;}
