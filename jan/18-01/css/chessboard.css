@@ -4,5 +4,5 @@ table{
 td{
   height: 64px;
   width: 64px;}
-.black{
-  background-color: black;}
+  tr:nth-child(2n-1) td:nth-child(2n), tr:nth-child(2n) td:nth-child(2n-1) {
+    background: rgb(0, 0, 0);}
