@@ -96,6 +96,8 @@ main img
   height: 9rem;
   background-color: rgb(72, 72, 248);
   border: solid 4px black;
+  display: inline-flex;
+  margin: 2rem;
  
  }
 
@@ -107,6 +109,7 @@ main img
   position: relative;
   top: 10px;
   left: 4px;
+  display: inline-flex;
 
 }
 
@@ -115,6 +118,7 @@ main img
   height: 0rem;
   border-bottom: 6rem solid rgb(0, 0, 0);
   border-right: 8rem solid transparent;
+  display: inline-flex;
   margin: 3rem;
   
   }
@@ -124,7 +128,8 @@ main img
   height: 5rem;
   background-color: rgb(0, 165, 36);
   border: solid 4px black;
-  margin: 3rem;
+  display: inline-flex;
+  margin: 2rem;
 }
 #cir{
   width: 5rem;
@@ -132,7 +137,8 @@ main img
   border-radius: 50%;
   background-color: rgb(255, 129, 45);
   border: solid 4px black;
-  margin: 3rem;
+  display: inline-flex;
+  margin: 2rem;
 
 }
 
@@ -141,6 +147,7 @@ main img
   align-content: flex-start;
   border: #35F500 solid 3px;
   border-radius: 5% 5%;
+  padding: 1rem;
 }
 div video {
   border: #35F500 3px solid;
