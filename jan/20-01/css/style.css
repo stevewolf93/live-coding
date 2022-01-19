@@ -65,13 +65,27 @@ div > p {
 
 /* element1~element2 Selector 
     element preceded element */
+    p~span{
+        color: aliceblue;
+        background-color: blueviolet;
+    }
 
 /* [attribute] Selector */
 
+[id] {
+    font-size: 3rem;
+
+}
+
 /* [attribute=value] Selector  */
+
+[type="submit"] {
+
+}
 
 /* [attribute~=value] Selector
     containing the value */
+    
 
 /* [attribute^=value] Selector
     begins with the value */
