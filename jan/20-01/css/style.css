@@ -80,25 +80,39 @@ div > p {
 /* [attribute=value] Selector  */
 
 [type="submit"] {
-
+background-color: cadetblue;
+border: none;
 }
 
 /* [attribute~=value] Selector
     containing the value */
-    
+    [alt~=tree] {
+        width: 12rem;
+    }
 
 /* [attribute^=value] Selector
     begins with the value */
+[title^=here] {
+    background-color: bisque;
+}
 
 /* [attribute$=value] Selector
     value ends with  */
+    [title$=info]{
+        border: 5px dashed black;
+    }
 
 /* [attribute*=value] Selector
     contains the substring */
-
+[class*=long]{
+    border: 2px red dashed;
+}
 /* pseudo class  */
 /* specifies a special state for that element */
 /* :hover */
+table:hover {
+    background-color: aqua;
+}
 
 /* :visited */
 
