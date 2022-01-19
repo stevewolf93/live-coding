@@ -115,7 +115,9 @@ table:hover {
 }
 
 /* :visited */
-
+a,a:visited {
+    color: aquamarine;
+}
 /* :focus */
 
 /* :active */
