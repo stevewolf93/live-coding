@@ -17,24 +17,51 @@ things you might want to pay more attention to:
 
 /* Element selector */
 
+html {
+    background-color: darkgrey;
+}
+
 /* #ID selector */
+#cool {
+color: blanchedalmond;
+
+}
 
 /* .class selector */
+
+.box {
+    height: 10rem;
+    width: 10rem;
+    background-color: darkorange;
+}
 
 /* element,element Selector
     element AND element 
     */
+p,
+span{
+    background-color: rgb(146, 146, 146);
+}
+
 
 /* element element Selector
     aka element inside element 
     */
+    header li {
+        font-size: 3rem;
+    }
 
 /* element>element	 Selector  
     element parent element 
     */
-
+div > p {
+    background-color: aqua;
+} 
 /* element+element  Selector
     element immediately after element */
+    div+p{
+        background-color: blue; 
+    }
 
 /* element1~element2 Selector 
     element preceded element */
