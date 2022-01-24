@@ -22,6 +22,7 @@ form{
 
 fieldset{
   border-radius: 5px;
+  
 }
 
 fieldset input, select {
@@ -71,6 +72,7 @@ fieldset input:focus{
   border-radius: 25px;
   background-color: rgb(209, 204, 204);
   transition: 1.2s;
+  border: 2px solid black;
 }
 
 .slider::before {
@@ -78,7 +80,7 @@ fieldset input:focus{
   content: "";
   border-radius: 100%;
   left: .25rem;
-  bottom: 0.355rem;
+  bottom: 0.375rem;
   width: 1rem;
   height: 1rem;
   background: rgb(255, 255, 255);
@@ -91,6 +93,12 @@ input:checked + span {
 
 input:checked + .slider::before {
 transform: translateX(2.25rem);
+transition: 1.2s;
+
+}
+
+input:unchecked + .slider::before {
+  transform: translateX(-2.25rem);
 transition: 1.2s;
 }
 
