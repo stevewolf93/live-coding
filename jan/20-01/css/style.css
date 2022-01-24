@@ -3,6 +3,7 @@
   margin: 10px;
   padding: 0;
 }
+<<<<<<< HEAD
 /* :lang  */
 
 :lang(it){
@@ -36,6 +37,70 @@ input{
   border: 3px solid rgb(0, 255, 64);
   background-color: rgb(0, 151, 25);
   color: aquamarine;
+=======
+:root {
+  font-size: 16px;
+  /* hey I have something for you */
+  --my-color: orange;
+  --my-font-size: 3rem;
+  --other-color: rgba(222, 33, 5, 0.5);
+  --header-font-family: "Lucida Sans" Geneva, Verdana, sans-serif;
+  --box-width: 3rem;
+  --img-height: 44rem;
+}
+body {
+  color: var(--my-color);
+}
+h1 {
+  border: 2px var(--my-color) solid;
+}
+/* pseudo elements VS  pseudo classes */
+
+/* pseudo-class is a keyword added to a selector that specifies a special state of the selected element(s). */
+/* more pseudo classes
+  :valid
+  :hover
+  
+  */
+
+/* pseudo-element is a keyword added to a selector that lets you style a specific part of the selected element(s) */
+
+/* ::before  Vs :before */
+/*   
+    :before css2 and ::before is css3
+  */
+h1::after {
+  content: "😎";
+}
+h1::before {
+  content: "🎉";
+}
+/* ::placeholder  */
+input[type="text"]::placeholder,
+input[type="password"]::placeholder {
+  color: var(--my-color);
+}
+/* ::first-letter (:first-letter) */
+p::first-letter {
+  color: var(--other-color);
+  /* font-size: 4rem; */
+  /* font-size: calc(var(--my-font-size) - 1rem); */
+  font-size: calc(var(--my-font-size) * 1);
+}
+/* display:none vs opacity: 0 */
+div {
+  border: 2px black solid;
+}
+/* vh & vw */
+.car {
+  /* view port width */
+  width: 50vw;
+  /* view port height */
+  height: 50vh;
+  filter: grayscale(10);
+  /* opacity: 0.3; */
+  display: none;
+>>>>>>> b42741b5a9f832a5ef766ef6351715e91b598917
 }
 
 input:placeholder-shown {
