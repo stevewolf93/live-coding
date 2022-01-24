@@ -5,12 +5,58 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" href="./images/icon.png" />
+    <!-- https://fontawesome.com/download-->
     <link
       rel="stylesheet"
-      href="./fontawesome-free-6.0.0-beta3-web/css/all.css"
-    />
+      href="./fontawesome-free-6.0.0-beta3-web/css/all.css"/> 
     <link rel="stylesheet" href="./css/style.css" />
     <title>Forms</title>
   </head>
-  <body></body>
+  <body>
+
+
+
+    <form action="index.js" method="GET">
+<fieldset>
+  <legend>Personal info</legend>
+  <input type="text" name="fName" id="1" placeholder=" Your First Name">
+  <input type="text" name="lName" id="2" placeholder=" Your Last Name">
+  <input type="email" name="email" id="3" placeholder="Enter your E-Mail" required>
+</fieldset>
+
+<fieldset> 
+<legend>fav things</legend>
+<input type="color" name="color" id="4" placeholder="color">
+<input type="time" name="time" id="5">
+<input type="file" name="file" id="6" >
+<input type="password" name="password" id="7" required>
+<input type="number" name="number" id="8" required min="1" max="100">
+
+
+<select name="season" id="9">
+  <option value="summer">Summer</option>
+  <option value="fall">Fall</option>
+  <option value="winter">Winter</option>
+  <option value="spring">Spring</option>
+</select>
+
+<section class="toggle">
+  <label class="toggle-lable"> You want more info?</label>
+  <label class="switch">
+    <input type="checkbox" name="clientAgree" id="10">
+    <span class="slider"></span>
+  </label>
+</section>
+
+</fieldset> 
+<input type="submit" value="Login">
+<input type="reset" value="clear">
+</form>
+
+
+
+    <i class="fas fa-home"></i>
+    &#x2646; 
+   <i class="fab fa-reddit"></i>
+  </body>
 </html>
