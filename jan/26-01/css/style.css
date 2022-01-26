@@ -1,3 +1,35 @@
+.container {
+  width: 50rem;
+  height: 50rem;
+  background-color: slategray;
+  display: flex;
+  justify-content: space-around;
+  /* flex-direction: column;
+  flex-wrap: wrap; */
+  flex-flow: column wrap;
+  align-items: center;
+}
+
+.child {
+  width: 5rem;
+  height: 10rem;
+  border: black 1px dotted;
+  /* margin-left: 1rem; */
+}
+
+.green {
+  background-color: green;
+}
+
+.red {
+  background-color: tomato;
+  order:-2;
+}
+
+.black {
+  background-color: black;
+}
+
 /* special effects */
 /*  order : sets the order to lay out an item in a flex */
 
