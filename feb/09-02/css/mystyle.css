@@ -82,14 +82,23 @@ animation-duration: 500ms;
     }
   }
   /* lets go a bit crazier */
-  /* fourth animation  */
-  .chili:hover {
-    animation-name: arrow-down;
-    animation-duration: 150ms;
+  /* fourth animation fade in and out */
+  .chili:hover>div{
+    animation-name: fade;
+    animation-duration: 750ms;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
     }
-  @keyframes arrow-down {
-    0%{
+  @keyframes fade {
+    0%{opacity: 1;
+    }
+    25%{opacity: 0.75;
+    }
+    50%{opacity: 0.5;
+    }
+    75%{opacity: 0.25;
+    }
+    100%{opacity: 0;
 
     }
-    
   }
