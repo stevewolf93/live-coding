@@ -9,7 +9,7 @@
 body {
   width: 100vw;
   height: 100vh;
-  background-color: #000;
+  background-color: rgb(5, 5, 5);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -135,7 +135,7 @@ main {
   animation-name: plus-vertikal;
   animation-duration: 1700ms;
   animation-iteration-count: infinite;
-  border:none;
+  border: none;
 }
 @keyframes plus-vertikal {
   0% {
@@ -158,14 +158,14 @@ main {
   animation-name: plus-horizontal;
   animation-duration: 1700ms;
   animation-iteration-count: infinite;
-  border:none;
+  border: none;
 }
 @keyframes plus-horizontal {
   0% {
     transform: translatey(0);
   }
   25% {
-    transform:translatey(-70px);
+    transform: translatey(-70px);
   }
   50% {
     transform: translatey(-70px);
@@ -198,7 +198,7 @@ main {
   animation-name: cross-vertikal;
   animation-duration: 1700ms;
   animation-iteration-count: infinite;
-  border:none;
+  border: none;
 }
 @keyframes cross-vertikal {
   0% {
@@ -221,22 +221,76 @@ main {
   animation-name: cross-horizontal;
   animation-duration: 1700ms;
   animation-iteration-count: infinite;
-  border:none;
+  border: none;
 }
 @keyframes cross-horizontal {
   0% {
     transform: rotate(0deg) translatey(0) translatex(0);
   }
   25% {
-    transform:  rotate(-45deg) translatey(-50px) translatex(48px);
+    transform: rotate(-45deg) translatey(-50px) translatex(48px);
   }
   50% {
-    transform:  rotate(-45deg) translatey(-50px) translatex(48px);
+    transform: rotate(-45deg) translatey(-50px) translatex(48px);
   }
   75% {
-    transform:  rotate(-45deg) translatey(-50px) translatex(48px);
+    transform: rotate(-45deg) translatey(-50px) translatex(48px);
   }
   100% {
-    transform:  rotate(-45deg) translatey(-50px) translatex(48px);
+    transform: rotate(-45deg) translatey(-50px) translatex(48px);
   }
+}
+/* lets go even more crazy */
+/* seventh animation  */
+.chicken:active > div:nth-child(2n-1) {
+  opacity: 0;
+}
+.chicken:active > div:nth-child(2) {
+  opacity: 1;
+  animation-name: growth;
+  animation-duration: 1500ms;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+@keyframes growth {
+  0% {
+    width: 0%;
+    height: 0%;
+  }
+  50% {
+    transform: rotate(22590deg);
+    width: 25%;
+    height: 25%;
+  }
+  100% {
+    transform: rotate(0deg);
+    width: 80%;
+    height: 80%;
+    border-radius: 35%;
+  }
+}
+/* eigth animation pacman */
+.whopper:hover > div {
+  animation-name: pacman;
+  animation-duration: 1.5s;
+}
+.whopper:hover > div:nth-child(2n-1) {
+  opacity: 0;
+}
+
+@keyframes pacman {
+  0% {
+    border: 100px solid #ffae0000;
+    border-right-color: #0c0000;
+    border-radius: 100%;
+    animation-name: pacman;
+  }
+  100%{
+    border: 100px solid #ffae00;
+    border-radius: 100%;
+    animation-name: pacman;
+  }
+}
+.eye{
+  opacity: 0;
 }
