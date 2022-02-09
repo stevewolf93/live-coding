@@ -1,12 +1,12 @@
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
-:root{
+:root {
   font-size: 16px;
 }
-body{
+body {
   width: 100vw;
   height: 100vh;
   background-color: #000;
@@ -14,15 +14,14 @@ body{
   justify-content: center;
   align-items: center;
 }
-main{
+main {
   width: 95%;
   height: 95%;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(3, 1fr);
-
 }
-.burger{
+.burger {
   width: 250px;
   height: 250px;
   background: radial-gradient(#0c0000, #0e0e0e);
@@ -33,72 +32,148 @@ main{
   border-radius: 50%;
   -webkit-box-shadow: 0 0 50px rgb(200, 100, 0);
   box-shadow: 0 0 50px rgb(200, 100, 0);
-  margin:5% 25%;
+  margin: 5% 25%;
 }
-.burger div{
+.burger div {
   width: 60%;
   height: 5%;
   border: #000 solid 1px;
-  background-color:rgb(200, 100, 0);
+  background-color: rgb(200, 100, 0);
   border-radius: 5px;
 }
 /* first animation basic rotation of 90deg to the right */
 .ham:hover {
-animation-name: rotate-right;
-animation-duration: 500ms;
+  animation-name: rotate-right;
+  animation-duration: 500ms;
 }
 @keyframes rotate-right {
-  from {transform: rotate(0deg);
+  from {
+    transform: rotate(0deg);
   }
-  to {transform: rotate(90deg);
+  to {
+    transform: rotate(90deg);
   }
 }
 /* second animation basic rotation to the left */
 .cheese:hover {
   animation-name: rotate-left;
   animation-duration: 500ms;
+}
+@keyframes rotate-left {
+  from {
+    transform: rotate(0deg);
   }
-  @keyframes rotate-left {
-    from {transform: rotate(0deg);
-    }
-    to {transform: rotate(-90deg);
-    }
+  to {
+    transform: rotate(-90deg);
   }
+}
 /* third animation wiggle */
 .kebab:hover {
   animation-name: wiggle;
   animation-duration: 550ms;
+}
+@keyframes wiggle {
+  0% {
+    transform: rotate(0deg);
   }
-  @keyframes wiggle{
-    0% {transform: rotate(0deg);
-    }
-    25% {transform: rotate(-45deg);
-    }
-    50% {transform: rotate(0deg);
-    }
-    75%{transform: rotate(45deg);
-    }
-    100%{transform: rotate(0deg);
-    }
+  25% {
+    transform: rotate(-45deg);
   }
-  /* lets go a bit crazier */
-  /* fourth animation fade in and out */
-  .chili:hover>div{
-    animation-name: fade;
-    animation-duration: 750ms;
-    animation-direction: alternate;
-    animation-iteration-count: infinite;
-    }
-  @keyframes fade {
-    0%{opacity: 1;
-    }
-    25%{opacity: 0.75;
-    }
-    50%{opacity: 0.5;
-    }
-    75%{opacity: 0.25;
-    }
-    100%{opacity: 0;
-
-    }
+  50% {
+    transform: rotate(0deg);
   }
+  75% {
+    transform: rotate(45deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+/* lets go a bit crazier */
+/* fourth animation fade in and out */
+.chili:hover > div {
+  animation-name: fade;
+  animation-duration: 700ms;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+}
+@keyframes fade {
+  0% {
+    opacity: 1;
+  }
+  25% {
+    opacity: 0.75;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  75% {
+    opacity: 0.25;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+/* fivth animation the plus  */
+.bacon:hover > div:nth-child(2) {
+  animation-name: disappear;
+  animation-duration: 1700ms;
+  animation-iteration-count: infinite;
+}
+@keyframes disappear {
+  0% {
+    opacity: 1;
+  }
+  25% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+.bacon:hover > div:nth-child(1) {
+  animation-name: plus-vertikal;
+  animation-duration: 1700ms;
+  animation-iteration-count: infinite;
+  border:none;
+}
+@keyframes plus-vertikal {
+  0% {
+    transform: rotate(0deg) translatey(0);
+  }
+  25% {
+    transform: rotate(90deg) translatex(70px);
+  }
+  50% {
+    transform: rotate(90deg) translatex(70px);
+  }
+  75% {
+    transform: rotate(90deg) translatex(70px);
+  }
+  100% {
+    transform: rotate(90deg) translatex(70px);
+  }
+}
+.bacon:hover > div:nth-child(3) {
+  animation-name: plus-horizontal;
+  animation-duration: 1700ms;
+  animation-iteration-count: infinite;
+  border:none;
+}
+@keyframes plus-horizontal {
+  0% {
+    transform: translatey(0);
+  }
+  25% {
+    transform:translatey(-70px);
+  }
+  50% {
+    transform: translatey(-70px);
+  }
+  75% {
+    transform: translatey(-70px);
+  }
+  100% {
+    transform: translatey(-70px);
+  }
+}
